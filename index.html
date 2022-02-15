@@ -17,7 +17,7 @@
         <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body onload="init();">
-        <a-scene   shadow="type: basic; autoUpdate: false;" renderer="antialias: false; colorManagement: false; physicallyCorrectLights: false;">
+        <a-scene   shadow="type: pcfsoft; autoUpdate: true;" renderer="antialias: false; colorManagement: false; physicallyCorrectLights: false;">
             <!-- Assets -->
             <a-assets>
 				<a-asset-item id="Cube" src="./assets/Cube.gltf"></a-asset-item>
@@ -86,61 +86,61 @@
 
             <!-- Entities -->
             
-			<a-entity id="#Cube" gltf-model="#Cube"  scale="1 1 1" position="6.330056190490723 2.0 -3.9118733406066895" visible="true" shadow="cast: false" ></a-entity>
-			<a-entity id="#Cube.001" gltf-model="#Cube.001"  scale="1 1 1" position="5.075555801391602 2.0 -0.0" visible="true" shadow="cast: false" ></a-entity>
-			<a-entity id="#Cube.002" gltf-model="#Cube.002"  scale="1 1 1" position="13.169378280639648 2.0 6.0" visible="true" shadow="cast: false" ></a-entity>
-			<a-entity id="#Cube.003" gltf-model="#Cube.003"  scale="1 1 1" position="10.330056190490723 2.0 5.0" visible="true" shadow="cast: false" ></a-entity>
-			<a-entity id="#Cube.004" gltf-model="#Cube.004"  scale="1 1 1" position="10.330056190490723 2.0 -5.0" visible="true" shadow="cast: false" ></a-entity>
-			<a-entity id="#Cube.005" gltf-model="#Cube.005"  scale="1 1 1" position="6.330056190490723 2.009999990463257 3.962692975997925" visible="true" shadow="cast: false" ></a-entity>
-			<a-entity id="#Cube.006" gltf-model="#Cube.006"  scale="1 1 1" position="13.169378280639648 2.0 -6.0" visible="true" shadow="cast: false" ></a-entity>
-			<a-entity id="#Cube.007" gltf-model="#Cube.007"  scale="1 1 1" position="10.137542724609375 0.20000004768371582 -0.0" visible="true" shadow="cast: false" ></a-entity>
-			<a-entity id="#Cube.008" gltf-model="#Cube.008"  scale="1 1 1" position="9.137542724609375 0.20000004768371582 -0.0" visible="true" shadow="cast: false" ></a-entity>
-			<a-entity id="#Cube.009" gltf-model="#Cube.009"  scale="1 1 1" position="9.637542724609375 0.20000004768371582 -0.5" visible="true" shadow="cast: false" ></a-entity>
-			<a-entity id="#Cube.010" gltf-model="#Cube.010"  scale="1 1 1" position="9.637542724609375 0.20000004768371582 0.5" visible="true" shadow="cast: false" ></a-entity>
-			<a-entity id="#Cube.011" gltf-model="#Cube.011"  scale="1 1 1" position="9.637542724609375 0.20000004768371582 -0.0" visible="true" shadow="cast: false" ></a-entity>
-			<a-entity id="#Cube.012" gltf-model="#Cube.012"  scale="1 1 1" position="-0.19823360443115234 0.20000016689300537 -7.415190696716309" visible="true" shadow="cast: false" ></a-entity>
-			<a-entity id="#Cube.013" gltf-model="#Cube.013"  scale="1 1 1" position="0.30176639556884766 0.20000016689300537 -7.415190696716309" visible="true" shadow="cast: false" ></a-entity>
-			<a-entity id="#Cube.014" gltf-model="#Cube.014"  scale="1 1 1" position="-0.6982336044311523 0.20000016689300537 -7.415190696716309" visible="true" shadow="cast: false" ></a-entity>
-			<a-entity id="#Cube.015" gltf-model="#Cube.015"  scale="1 1 1" position="-0.19823360443115234 0.20000016689300537 -6.915190696716309" visible="true" shadow="cast: false" ></a-entity>
-			<a-entity id="#Cube.016" gltf-model="#Cube.016"  scale="1 1 1" position="-0.19823360443115234 0.20000016689300537 -7.91519021987915" visible="true" shadow="cast: false" ></a-entity>
-			<a-entity id="#Cube.017" gltf-model="#Cube.017"  scale="1 1 1" position="-6.198233604431152 2.0 -10.947026252746582" visible="true" shadow="cast: false" ></a-entity>
-			<a-entity id="#Cube.018" gltf-model="#Cube.018"  scale="1 1 1" position="3.7644596099853516 2.009999990463257 -4.1077046394348145" visible="true" shadow="cast: false" ></a-entity>
-			<a-entity id="#Cube.019" gltf-model="#Cube.019"  scale="1 1 1" position="-5.198233604431152 2.0 -8.107705116271973" visible="true" shadow="cast: false" ></a-entity>
-			<a-entity id="#Cube.020" gltf-model="#Cube.020"  scale="1 1 1" position="4.801766395568848 2.0 -8.107705116271973" visible="true" shadow="cast: false" ></a-entity>
-			<a-entity id="#Cube.021" gltf-model="#Cube.021"  scale="1 1 1" position="5.801766395568848 2.0 -10.947026252746582" visible="true" shadow="cast: false" ></a-entity>
-			<a-entity id="#Cube.022" gltf-model="#Cube.022"  scale="1 1 1" position="-0.19823360443115234 2.0 -2.8532040119171143" visible="true" shadow="cast: false" ></a-entity>
-			<a-entity id="#Cube.023" gltf-model="#Cube.023"  scale="1 1 1" position="-4.110106468200684 2.0 -4.107704162597656" visible="true" shadow="cast: false" ></a-entity>
-			<a-entity id="#Cube.024" gltf-model="#Cube.024"  scale="1 1 1" position="-6.227307319641113 2.0 3.904426336288452" visible="true" shadow="cast: false" ></a-entity>
-			<a-entity id="#Cube.025" gltf-model="#Cube.025"  scale="1 1 1" position="-4.972805976867676 2.0 -0.0074462890625" visible="true" shadow="cast: false" ></a-entity>
-			<a-entity id="#Cube.026" gltf-model="#Cube.026"  scale="1 1 1" position="-13.066629409790039 2.0 -6.007446765899658" visible="true" shadow="cast: false" ></a-entity>
-			<a-entity id="#Cube.027" gltf-model="#Cube.027"  scale="1 1 1" position="-10.227307319641113 2.0 -5.007446765899658" visible="true" shadow="cast: false" ></a-entity>
-			<a-entity id="#Cube.028" gltf-model="#Cube.028"  scale="1 1 1" position="-10.227307319641113 2.0 4.9925537109375" visible="true" shadow="cast: false" ></a-entity>
-			<a-entity id="#Cube.029" gltf-model="#Cube.029"  scale="1 1 1" position="-6.227307319641113 2.009999990463257 -3.9701390266418457" visible="true" shadow="cast: false" ></a-entity>
-			<a-entity id="#Cube.030" gltf-model="#Cube.030"  scale="1 1 1" position="-13.066629409790039 2.0 5.992553234100342" visible="true" shadow="cast: false" ></a-entity>
-			<a-entity id="#Cube.031" gltf-model="#Cube.031"  scale="1 1 1" position="-10.03479290008545 0.20000028610229492 -0.0074462890625" visible="true" shadow="cast: false" ></a-entity>
-			<a-entity id="#Cube.032" gltf-model="#Cube.032"  scale="1 1 1" position="-9.03479290008545 0.20000028610229492 -0.0074462890625" visible="true" shadow="cast: false" ></a-entity>
-			<a-entity id="#Cube.033" gltf-model="#Cube.033"  scale="1 1 1" position="-9.53479290008545 0.20000028610229492 0.4925537109375" visible="true" shadow="cast: false" ></a-entity>
-			<a-entity id="#Cube.034" gltf-model="#Cube.034"  scale="1 1 1" position="-9.53479290008545 0.20000028610229492 -0.5074467658996582" visible="true" shadow="cast: false" ></a-entity>
-			<a-entity id="#Cube.035" gltf-model="#Cube.035"  scale="1 1 1" position="-9.53479290008545 0.20000028610229492 -0.0074462890625" visible="true" shadow="cast: false" ></a-entity>
-			<a-entity id="#Cube.036" gltf-model="#Cube.036"  scale="1 1 1" position="0.03525876998901367 0.20000040531158447 7.6254777908325195" visible="true" shadow="cast: false" ></a-entity>
-			<a-entity id="#Cube.037" gltf-model="#Cube.037"  scale="1 1 1" position="-0.46474218368530273 0.20000040531158447 7.6254777908325195" visible="true" shadow="cast: false" ></a-entity>
-			<a-entity id="#Cube.038" gltf-model="#Cube.038"  scale="1 1 1" position="0.5352587699890137 0.20000040531158447 7.6254777908325195" visible="true" shadow="cast: false" ></a-entity>
-			<a-entity id="#Cube.039" gltf-model="#Cube.039"  scale="1 1 1" position="0.03525876998901367 0.20000040531158447 7.1254777908325195" visible="true" shadow="cast: false" ></a-entity>
-			<a-entity id="#Cube.040" gltf-model="#Cube.040"  scale="1 1 1" position="0.03525876998901367 0.20000040531158447 8.12547779083252" visible="true" shadow="cast: false" ></a-entity>
-			<a-entity id="#Cube.041" gltf-model="#Cube.041"  scale="1 1 1" position="6.035257816314697 2.0 11.157313346862793" visible="true" shadow="cast: false" ></a-entity>
-			<a-entity id="#Cube.042" gltf-model="#Cube.042"  scale="1 1 1" position="-3.927433967590332 2.009999990463257 4.317992210388184" visible="true" shadow="cast: false" ></a-entity>
-			<a-entity id="#Cube.043" gltf-model="#Cube.043"  scale="1 1 1" position="5.035257816314697 2.0 8.317992210388184" visible="true" shadow="cast: false" ></a-entity>
-			<a-entity id="#Cube.044" gltf-model="#Cube.044"  scale="1 1 1" position="-4.9647417068481445 2.0 8.3179931640625" visible="true" shadow="cast: false" ></a-entity>
-			<a-entity id="#Cube.045" gltf-model="#Cube.045"  scale="1 1 1" position="-5.9647417068481445 2.0 11.15731430053711" visible="true" shadow="cast: false" ></a-entity>
-			<a-entity id="#Cube.046" gltf-model="#Cube.046"  scale="1 1 1" position="0.035257816314697266 2.0 3.063491106033325" visible="true" shadow="cast: false" ></a-entity>
-			<a-entity id="#Cube.047" gltf-model="#Cube.047"  scale="1 1 1" position="3.9471306800842285 2.0 4.317992210388184" visible="true" shadow="cast: false" ></a-entity>
-			<a-entity id="#Cube.048" gltf-model="#Cube.048"  scale="1 1 1" position="-0.039954185485839844 0.343361496925354 -0.0" visible="true" shadow="cast: false" ></a-entity>
-			<a-entity id="#Cube.049" gltf-model="#Cube.049"  scale="1 1 1" position="0.0 1.4199999570846558 -0.0" visible="true" shadow="cast: false" ></a-entity>
-			<a-entity id="#Plane" gltf-model="#Plane"  scale="1 1 1" position="0.0 0.0 -0.0" visible="true" shadow="cast: false" ></a-entity>
-			<a-entity id="#rp_dennis_posed_004_100k" gltf-model="#rp_dennis_posed_004_100k"  scale="1 1 1" position="12.466226577758789 0.9917072057723999 1.359391689300537" visible="true" shadow="cast: false" ></a-entity>
-			<a-entity id="#rp_dennis_posed_004_100k.001" gltf-model="#rp_dennis_posed_004_100k.001"  scale="1 1 1" position="-7.261187553405762 0.9917072057723999 0.016913333907723427" visible="true" shadow="cast: false" ></a-entity>
-			<a-entity id="#rp_dennis_posed_004_100k.002" gltf-model="#rp_dennis_posed_004_100k.002"  scale="1 1 1" position="2.2250638008117676 0.9917072057723999 -5.8779683113098145" visible="true" shadow="cast: false" ></a-entity>
-			<a-entity id="#rp_dennis_posed_004_100k.003" gltf-model="#rp_dennis_posed_004_100k.003"  scale="1 1 1" position="-1.7056375741958618 0.9917072057723999 6.436869144439697" visible="true" shadow="cast: false" ></a-entity>
+			<a-entity id="#Cube" gltf-model="#Cube" scale="1 1 1" position="6.330056190490723 2.0 -3.9118733406066895" visible="true" shadow="cast: true" ></a-entity>
+			<a-entity id="#Cube.001" gltf-model="#Cube.001" scale="1 1 1" position="5.075555801391602 2.0 -0.0" visible="true" shadow="cast: true" ></a-entity>
+			<a-entity id="#Cube.002" gltf-model="#Cube.002" scale="1 1 1" position="13.169378280639648 2.0 6.0" visible="true" shadow="cast: true" ></a-entity>
+			<a-entity id="#Cube.003" gltf-model="#Cube.003" scale="1 1 1" position="10.330056190490723 2.0 5.0" visible="true" shadow="cast: true" ></a-entity>
+			<a-entity id="#Cube.004" gltf-model="#Cube.004" scale="1 1 1" position="10.330056190490723 2.0 -5.0" visible="true" shadow="cast: true" ></a-entity>
+			<a-entity id="#Cube.005" gltf-model="#Cube.005" scale="1 1 1" position="6.330056190490723 2.009999990463257 3.962692975997925" visible="true" shadow="cast: true" ></a-entity>
+			<a-entity id="#Cube.006" gltf-model="#Cube.006" scale="1 1 1" position="13.169378280639648 2.0 -6.0" visible="true" shadow="cast: true" ></a-entity>
+			<a-entity id="#Cube.007" gltf-model="#Cube.007" scale="1 1 1" position="10.137542724609375 0.20000004768371582 -0.0" visible="true" shadow="cast: true" ></a-entity>
+			<a-entity id="#Cube.008" gltf-model="#Cube.008" scale="1 1 1" position="9.137542724609375 0.20000004768371582 -0.0" visible="true" shadow="cast: true" ></a-entity>
+			<a-entity id="#Cube.009" gltf-model="#Cube.009" scale="1 1 1" position="9.637542724609375 0.20000004768371582 -0.5" visible="true" shadow="cast: true" ></a-entity>
+			<a-entity id="#Cube.010" gltf-model="#Cube.010" scale="1 1 1" position="9.637542724609375 0.20000004768371582 0.5" visible="true" shadow="cast: true" ></a-entity>
+			<a-entity id="#Cube.011" gltf-model="#Cube.011" scale="1 1 1" position="9.637542724609375 0.20000004768371582 -0.0" visible="true" shadow="cast: true" ></a-entity>
+			<a-entity id="#Cube.012" gltf-model="#Cube.012" scale="1 1 1" position="-0.19823360443115234 0.20000016689300537 -7.415190696716309" visible="true" shadow="cast: true" ></a-entity>
+			<a-entity id="#Cube.013" gltf-model="#Cube.013" scale="1 1 1" position="0.30176639556884766 0.20000016689300537 -7.415190696716309" visible="true" shadow="cast: true" ></a-entity>
+			<a-entity id="#Cube.014" gltf-model="#Cube.014" scale="1 1 1" position="-0.6982336044311523 0.20000016689300537 -7.415190696716309" visible="true" shadow="cast: true" ></a-entity>
+			<a-entity id="#Cube.015" gltf-model="#Cube.015" scale="1 1 1" position="-0.19823360443115234 0.20000016689300537 -6.915190696716309" visible="true" shadow="cast: true" ></a-entity>
+			<a-entity id="#Cube.016" gltf-model="#Cube.016" scale="1 1 1" position="-0.19823360443115234 0.20000016689300537 -7.91519021987915" visible="true" shadow="cast: true" ></a-entity>
+			<a-entity id="#Cube.017" gltf-model="#Cube.017" scale="1 1 1" position="-6.198233604431152 2.0 -10.947026252746582" visible="true" shadow="cast: true" ></a-entity>
+			<a-entity id="#Cube.018" gltf-model="#Cube.018" scale="1 1 1" position="3.7644596099853516 2.009999990463257 -4.1077046394348145" visible="true" shadow="cast: true" ></a-entity>
+			<a-entity id="#Cube.019" gltf-model="#Cube.019" scale="1 1 1" position="-5.198233604431152 2.0 -8.107705116271973" visible="true" shadow="cast: true" ></a-entity>
+			<a-entity id="#Cube.020" gltf-model="#Cube.020" scale="1 1 1" position="4.801766395568848 2.0 -8.107705116271973" visible="true" shadow="cast: true" ></a-entity>
+			<a-entity id="#Cube.021" gltf-model="#Cube.021" scale="1 1 1" position="5.801766395568848 2.0 -10.947026252746582" visible="true" shadow="cast: true" ></a-entity>
+			<a-entity id="#Cube.022" gltf-model="#Cube.022" scale="1 1 1" position="-0.19823360443115234 2.0 -2.8532040119171143" visible="true" shadow="cast: true" ></a-entity>
+			<a-entity id="#Cube.023" gltf-model="#Cube.023" scale="1 1 1" position="-4.110106468200684 2.0 -4.107704162597656" visible="true" shadow="cast: true" ></a-entity>
+			<a-entity id="#Cube.024" gltf-model="#Cube.024" scale="1 1 1" position="-6.227307319641113 2.0 3.904426336288452" visible="true" shadow="cast: true" ></a-entity>
+			<a-entity id="#Cube.025" gltf-model="#Cube.025" scale="1 1 1" position="-4.972805976867676 2.0 -0.0074462890625" visible="true" shadow="cast: true" ></a-entity>
+			<a-entity id="#Cube.026" gltf-model="#Cube.026" scale="1 1 1" position="-13.066629409790039 2.0 -6.007446765899658" visible="true" shadow="cast: true" ></a-entity>
+			<a-entity id="#Cube.027" gltf-model="#Cube.027" scale="1 1 1" position="-10.227307319641113 2.0 -5.007446765899658" visible="true" shadow="cast: true" ></a-entity>
+			<a-entity id="#Cube.028" gltf-model="#Cube.028" scale="1 1 1" position="-10.227307319641113 2.0 4.9925537109375" visible="true" shadow="cast: true" ></a-entity>
+			<a-entity id="#Cube.029" gltf-model="#Cube.029" scale="1 1 1" position="-6.227307319641113 2.009999990463257 -3.9701390266418457" visible="true" shadow="cast: true" ></a-entity>
+			<a-entity id="#Cube.030" gltf-model="#Cube.030" scale="1 1 1" position="-13.066629409790039 2.0 5.992553234100342" visible="true" shadow="cast: true" ></a-entity>
+			<a-entity id="#Cube.031" gltf-model="#Cube.031" scale="1 1 1" position="-10.03479290008545 0.20000028610229492 -0.0074462890625" visible="true" shadow="cast: true" ></a-entity>
+			<a-entity id="#Cube.032" gltf-model="#Cube.032" scale="1 1 1" position="-9.03479290008545 0.20000028610229492 -0.0074462890625" visible="true" shadow="cast: true" ></a-entity>
+			<a-entity id="#Cube.033" gltf-model="#Cube.033" scale="1 1 1" position="-9.53479290008545 0.20000028610229492 0.4925537109375" visible="true" shadow="cast: true" ></a-entity>
+			<a-entity id="#Cube.034" gltf-model="#Cube.034" scale="1 1 1" position="-9.53479290008545 0.20000028610229492 -0.5074467658996582" visible="true" shadow="cast: true" ></a-entity>
+			<a-entity id="#Cube.035" gltf-model="#Cube.035" scale="1 1 1" position="-9.53479290008545 0.20000028610229492 -0.0074462890625" visible="true" shadow="cast: true" ></a-entity>
+			<a-entity id="#Cube.036" gltf-model="#Cube.036" scale="1 1 1" position="0.03525876998901367 0.20000040531158447 7.6254777908325195" visible="true" shadow="cast: true" ></a-entity>
+			<a-entity id="#Cube.037" gltf-model="#Cube.037" scale="1 1 1" position="-0.46474218368530273 0.20000040531158447 7.6254777908325195" visible="true" shadow="cast: true" ></a-entity>
+			<a-entity id="#Cube.038" gltf-model="#Cube.038" scale="1 1 1" position="0.5352587699890137 0.20000040531158447 7.6254777908325195" visible="true" shadow="cast: true" ></a-entity>
+			<a-entity id="#Cube.039" gltf-model="#Cube.039" scale="1 1 1" position="0.03525876998901367 0.20000040531158447 7.1254777908325195" visible="true" shadow="cast: true" ></a-entity>
+			<a-entity id="#Cube.040" gltf-model="#Cube.040" scale="1 1 1" position="0.03525876998901367 0.20000040531158447 8.12547779083252" visible="true" shadow="cast: true" ></a-entity>
+			<a-entity id="#Cube.041" gltf-model="#Cube.041" scale="1 1 1" position="6.035257816314697 2.0 11.157313346862793" visible="true" shadow="cast: true" ></a-entity>
+			<a-entity id="#Cube.042" gltf-model="#Cube.042" scale="1 1 1" position="-3.927433967590332 2.009999990463257 4.317992210388184" visible="true" shadow="cast: true" ></a-entity>
+			<a-entity id="#Cube.043" gltf-model="#Cube.043" scale="1 1 1" position="5.035257816314697 2.0 8.317992210388184" visible="true" shadow="cast: true" ></a-entity>
+			<a-entity id="#Cube.044" gltf-model="#Cube.044" scale="1 1 1" position="-4.9647417068481445 2.0 8.3179931640625" visible="true" shadow="cast: true" ></a-entity>
+			<a-entity id="#Cube.045" gltf-model="#Cube.045" scale="1 1 1" position="-5.9647417068481445 2.0 11.15731430053711" visible="true" shadow="cast: true" ></a-entity>
+			<a-entity id="#Cube.046" gltf-model="#Cube.046" scale="1 1 1" position="0.035257816314697266 2.0 3.063491106033325" visible="true" shadow="cast: true" ></a-entity>
+			<a-entity id="#Cube.047" gltf-model="#Cube.047" scale="1 1 1" position="3.9471306800842285 2.0 4.317992210388184" visible="true" shadow="cast: true" ></a-entity>
+			<a-entity id="#Cube.048" gltf-model="#Cube.048" scale="1 1 1" position="-0.039954185485839844 0.343361496925354 -0.0" visible="true" shadow="cast: true" ></a-entity>
+			<a-entity id="#Cube.049" gltf-model="#Cube.049" scale="1 1 1" position="0.0 1.4199999570846558 -0.0" visible="true" shadow="cast: true" ></a-entity>
+			<a-entity id="#Plane" gltf-model="#Plane" scale="1 1 1" position="0.0 0.0 -0.0" visible="true" shadow="cast: true" ></a-entity>
+			<a-entity id="#rp_dennis_posed_004_100k" gltf-model="#rp_dennis_posed_004_100k" scale="1 1 1" position="12.466226577758789 0.9917072057723999 1.359391689300537" visible="true" shadow="cast: true" ></a-entity>
+			<a-entity id="#rp_dennis_posed_004_100k.001" gltf-model="#rp_dennis_posed_004_100k.001" scale="1 1 1" position="-7.261187553405762 0.9917072057723999 0.01691334880888462" visible="true" shadow="cast: true" ></a-entity>
+			<a-entity id="#rp_dennis_posed_004_100k.002" gltf-model="#rp_dennis_posed_004_100k.002" scale="1 1 1" position="2.2250638008117676 0.9917072057723999 -5.8779683113098145" visible="true" shadow="cast: true" ></a-entity>
+			<a-entity id="#rp_dennis_posed_004_100k.003" gltf-model="#rp_dennis_posed_004_100k.003" scale="1 1 1" position="-1.7056375741958618 0.9917072057723999 6.436869144439697" visible="true" shadow="cast: true" ></a-entity>
 
             <!-- Camera -->
             <a-entity id="player" 
@@ -163,15 +163,15 @@
 
             <!-- Lights -->
             
-			<a-entity position="9.96828842163086 5.903861999511719 -1.0054539442062378" light="castShadow:false; color:#ff0400; distance:40.0; type:point; intensity:1.0; shadowBias: -0.001; shadowCameraFar: 501.02; shadowCameraBottom: 12; shadowCameraFov: 101.79; shadowCameraNear: 0; shadowCameraTop: -5; shadowCameraRight: 10; shadowCameraLeft: -10; shadowRadius: 2;"></a-entity>
-			<a-entity position="-1.2036876678466797 5.9038615226745605 -7.745935916900635" light="castShadow:false; color:#ff5f00; distance:40.0; type:point; intensity:1.0; shadowBias: -0.001; shadowCameraFar: 501.02; shadowCameraBottom: 12; shadowCameraFov: 101.79; shadowCameraNear: 0; shadowCameraTop: -5; shadowCameraRight: 10; shadowCameraLeft: -10; shadowRadius: 2;"></a-entity>
-			<a-entity position="-9.865538597106934 5.903861045837402 0.9980077743530273" light="castShadow:false; color:#0817ff; distance:40.0; type:point; intensity:1.0; shadowBias: -0.001; shadowCameraFar: 501.02; shadowCameraBottom: 12; shadowCameraFov: 101.79; shadowCameraNear: 0; shadowCameraTop: -5; shadowCameraRight: 10; shadowCameraLeft: -10; shadowRadius: 2;"></a-entity>
-			<a-entity position="1.040712833404541 5.903860569000244 7.956223487854004" light="castShadow:false; color:#4bff1f; distance:40.0; type:point; intensity:1.0; shadowBias: -0.001; shadowCameraFar: 501.02; shadowCameraBottom: 12; shadowCameraFov: 101.79; shadowCameraNear: 0; shadowCameraTop: -5; shadowCameraRight: 10; shadowCameraLeft: -10; shadowRadius: 2;"></a-entity>
+			<a-entity position="9.96828842163086 5.903861999511719 -1.0054539442062378" light="castShadow:true; color:#ddefff; distance:40.0; type:point; intensity:1.0; shadowBias: -0.001; shadowCameraFar: 501.02; shadowCameraBottom: 12; shadowCameraFov: 101.79; shadowCameraNear: 0; shadowCameraTop: -5; shadowCameraRight: 10; shadowCameraLeft: -10; shadowRadius: 2;"></a-entity>
+			<a-entity position="-1.2036876678466797 5.9038615226745605 -7.745935916900635" light="castShadow:true; color:#fae7ff; distance:40.0; type:point; intensity:1.0; shadowBias: -0.001; shadowCameraFar: 501.02; shadowCameraBottom: 12; shadowCameraFov: 101.79; shadowCameraNear: 0; shadowCameraTop: -5; shadowCameraRight: 10; shadowCameraLeft: -10; shadowRadius: 2;"></a-entity>
+			<a-entity position="-9.865538597106934 5.903861045837402 0.9980077743530273" light="castShadow:true; color:#eef7ff; distance:40.0; type:point; intensity:1.0; shadowBias: -0.001; shadowCameraFar: 501.02; shadowCameraBottom: 12; shadowCameraFov: 101.79; shadowCameraNear: 0; shadowCameraTop: -5; shadowCameraRight: 10; shadowCameraLeft: -10; shadowRadius: 2;"></a-entity>
+			<a-entity position="1.040712833404541 5.903860569000244 7.956223487854004" light="castShadow:true; color:#fff5ee; distance:40.0; type:point; intensity:1.0; shadowBias: -0.001; shadowCameraFar: 501.02; shadowCameraBottom: 12; shadowCameraFov: 101.79; shadowCameraNear: 0; shadowCameraTop: -5; shadowCameraRight: 10; shadowCameraLeft: -10; shadowRadius: 2;"></a-entity>
+			<a-entity position="19.456268310546875 5.903861999511719 -0.15327566862106323" light="castShadow:true; color:#ddefff; distance:40.0; type:point; intensity:1.0; shadowBias: -0.001; shadowCameraFar: 501.02; shadowCameraBottom: 12; shadowCameraFov: 101.79; shadowCameraNear: 0; shadowCameraTop: -5; shadowCameraRight: 10; shadowCameraLeft: -10; shadowRadius: 2;"></a-entity>
 
             <!-- Sky -->
-            <a-sky src = "./assets/imgs/pexels02.jpg"
-    animation = "property: rotation; to: 360 0 0; dur: 80000; loop: true; easing: linear;"> </a-sky>
+            <a-sky src="#sky" material="" geometry="" rotation="0 90 0"></a-sky>
         </a-scene>
     </body>
 </html>
-
+<!-- Generated automatically by AFRAME Exporter for Blender - https://silverslade.itch.io/a-frame-blender-exporter -->
